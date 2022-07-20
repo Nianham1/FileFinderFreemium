@@ -1,0 +1,36 @@
+﻿<Window x:Class="FileFinderFreemium.Tab2Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileFinderFreemium"
+        mc:Ignorable="d"
+        Title="Tab2" Height="864" Width="1536" ResizeMode="CanMinimize" Background="#FF574B90" Opacity="0.9">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="622*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="815*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Button Content="File Finder" Margin="10,-6,464,56" Click="Tab1Button_Click" Grid.Row="0"  Background="#FF786FA6" BorderBrush="#FFFBFBFB" Foreground="#FFFDFDFD" FontWeight="Bold" FontSize="14">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button x:Name ="Tab2Button" Content="Blank Tab" Margin="164,-6,310,56" Grid.Row="0"  Background="#FF786FA6" BorderBrush="#FFFBFBFB" Foreground="#FFFDFDFD" FontSize="14" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
